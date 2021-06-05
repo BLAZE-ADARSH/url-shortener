@@ -18,7 +18,7 @@ function controller(){
             });
 
             URL.save().then(result => {
-                return res.render('url' , {url : `http://localhost:3000/${slug}` });
+                return res.render('url' , {url : `https://url365.herokuapp.com/${slug}` });
             }).catch(err => {
                 console.log(err);
                 return res.send({err});
